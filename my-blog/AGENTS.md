@@ -24,6 +24,17 @@ hugo --minify
 hugo new content posts/my-post.md
 ```
 
+# Writing Workflow
+
+- VS Code writing flow uses Front Matter CMS with configuration in
+  `../frontmatter.json`.
+- Blog posts are managed from `content/posts/` through the Front Matter
+  `post` content type.
+- New Front Matter posts use the template at
+  `../.frontmatter/templates/post.md`.
+- Keep new posts as `draft: true` while writing; set `draft: false` before
+  publishing.
+
 # Validation
 
 - Run `hugo --minify` before publishing configuration, theme, or content changes.

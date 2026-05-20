@@ -1,0 +1,87 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.framework.id": "hugo",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "Posts",
+      "path": "[[workspace]]/my-blog/content/posts",
+      "contentTypes": ["post"]
+    },
+    {
+      "title": "Pages",
+      "path": "[[workspace]]/my-blog/content",
+      "excludeSubdir": true,
+      "contentTypes": ["page"]
+    }
+  ],
+  "frontMatter.content.publicFolder": "my-blog/static",
+  "frontMatter.content.defaultFileType": "md",
+  "frontMatter.preview.host": "http://127.0.0.1:1314",
+  "frontMatter.preview.pathName": "{{pathToken.relPath}}",
+  "frontMatter.taxonomy.tags": [],
+  "frontMatter.taxonomy.categories": [],
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "post",
+      "pageBundle": false,
+      "fileType": "md",
+      "template": ".frontmatter/templates/post.md",
+      "slugTemplate": "{{slug}}",
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string",
+          "required": true
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Draft",
+          "name": "draft",
+          "type": "draft",
+          "default": true
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "Categories",
+          "name": "categories",
+          "type": "categories"
+        }
+      ]
+    },
+    {
+      "name": "page",
+      "pageBundle": false,
+      "fileType": "md",
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string",
+          "required": true
+        },
+        {
+          "title": "Draft",
+          "name": "draft",
+          "type": "draft",
+          "default": false
+        }
+      ]
+    }
+  ]
+}
