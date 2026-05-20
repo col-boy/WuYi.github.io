@@ -8,6 +8,14 @@ under `content/`, and Hugo generates the static site into `public/`.
 - Install Hugo Extended and Git.
 - The current theme is `ananke`, loaded from `../themes/ananke`.
 
+# Repository
+
+- GitHub remote: `https://github.com/col-boy/WuYi.github.io.git`
+- Default branch: `main`
+- Expected GitHub Pages URL: `https://col-boy.github.io/WuYi.github.io/`
+- This repository uses GitHub Actions from `.github/workflows/hugo.yml` to build
+  `my-blog/` and deploy `my-blog/public/`.
+
 # Common Commands
 
 ```bash
