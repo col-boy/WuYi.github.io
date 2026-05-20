@@ -1,0 +1,9 @@
+baseURL = 'http://localhost:1313/'
+locale = 'zh-CN'
+title = '我的个人博客'
+theme = 'ananke'
+themesDir = '../themes'
+
+[params]
+  description = '记录学习、思考和作品的个人空间。'
+  recent_posts_number = 5
